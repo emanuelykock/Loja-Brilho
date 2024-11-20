@@ -1,0 +1,279 @@
+/* Definir a cor de fundo e o esquema de cores para o site */
+body {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9C4; /* Amarelo claro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FFD700; /* Cor de fundo amarelo */
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: #000;
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FF8C00; /* Laranja */
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #FFD700;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .copyright {
+    color: #000;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilo para as páginas específicas */
+
+/* Container de produtos */
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.produto-preco {
+    font-size: 18px;
+    color: #FF4500;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Seção de Revenda */
+.revenda-intro {
+    padding: 20px;
+    text-align: center;
+}
+
+.revenda-intro h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+.revenda-intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+.imagemrevenda {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Vantagens de Revenda */
+.vantagens-revenda {
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.vantagens-revenda h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.vantagens-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.vantagem-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vantagem-item h4 {
+    font-size: 22px;
+    color: #333;
+}
+
+.vantagem-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.bolsa-revenda {
+    display: block;  /* Torna a imagem um bloco */
+    margin: 20px auto; /* Adiciona margem e centraliza a imagem horizontalmente */
+    width: 80%; /* Define a largura da imagem, ajuste conforme necessário */
+    max-width: 600px; /* Limita o tamanho máximo da imagem */
+}
+
+/* Programa de Bônus */
+.programa-bonus {
+    padding: 30px;
+    background-color: #FFD700;
+    color: #333;
+    text-align: center;
+}
+
+.programa-bonus p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Formulário de Cadastro */
+.formulario-revenda {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.formulario-revenda h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.campo-form {
+    margin-bottom: 20px;
+}
+
+.campo-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-padrao {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.enviar {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enviar:hover {
+    background-color: #FF4500;
+    color: #fff;
+}
+
+/* Centralização do conteúdo principal */
+.pricípal {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Centralizando o conteúdo da seção .bijous */
+.bijous {
+    text-align: center; /* Centraliza o texto dentro da div */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+    margin: 0 auto; /* Centraliza a div na página */
+	font-size: 24px; /* Aumenta o tamanho da fonte para toda a div */
+}
+
+/* Ajustando o estilo do texto forte e itálico */
+.bijous strong {
+    font-size: 26px; /* Aumenta o tamanho da fonte para o texto em negrito */
+}
+
+.bijous em {
+    font-size: 28px; /* Aumenta o tamanho da fonte para o texto em itálico */
+}
+
+/* Centralizando as imagens dentro da div */
+.imagembijuteria, .semijoias {
+    width: 90%;  /* Ajusta a largura das imagens para 90% da largura do contêiner */
+    max-width: 800px; /* Limite máximo para imagens grandes (aumentado para mais espaço) */
+    display: block;  /* Torna as imagens elementos de bloco */
+    margin: 20px auto; /* Centraliza as imagens com espaçamento em torno delas */
+}
+
+/* Ajustando o estilo do parágrafo #frete */
+#frete {
+    font-size: 30px; /* Aumenta o tamanho da fonte para 30px */
+    font-weight: bold; /* Deixar o texto em negrito */
+    color: #FF8C00; /* Cor laranja */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Espaço superior */
+}
+
